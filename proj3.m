@@ -5,7 +5,6 @@ function [ Wlr, blr, Wnn1, Wnn2, bnn1, bnn2, trainErr, testCorr, testWrong, ErrP
     testx = loadImages('t10k-images.idx3-ubyte');
     testT = loadLabels('t10k-labels.idx1-ubyte');
     
-    % Transform the labels to correct target values.
     target = zeros(10, size(T, 1));
     for n = 1: size(T, 1)
         target(T(n) + 1, n) = 1;
