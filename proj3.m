@@ -16,9 +16,9 @@ function [ Wlr, blr, Wnn1, Wnn2, bnn1, bnn2, trainErr, testCorr, testWrong, ErrP
     logisticended = 1
     
    
-   % [Wnn1, Wnn2, bnn1, bnn2, trainErr, testCorr, testWrong] = neuralNetwork( x, target, testx,testT);
+   [Wnn1, Wnn2, bnn1, bnn2, trainErr, testCorr, testWrong] = neuralNetwork( x, target, testx,testT);
     
-   % ErrPercent = 100*(testWrong/(testCorr+testWrong));
+   ErrPercent = 100*(testWrong/(testCorr+testWrong));
 
 end
 
